@@ -44,6 +44,6 @@ RUN chown -R www-data:www-data /var/www/
 
 USER www-data
 WORKDIR /var/www/html
-COPY composer.json ./composer.json
+COPY ./composer.json ./composer.json
 RUN composer install --no-dev --no-interaction --no-autoloader --no-scripts
 RUN composer dump-autoload
