@@ -1,0 +1,18 @@
+{
+  "number": {},
+  "scheme": "mastercard",
+  "type": "debit",
+  "brand": "Debit Other Embossed Mastercard Card",
+  "country": {
+    "numeric": "804",
+    "alpha2": "UA",
+    "name": "Ukraine",
+    "emoji": "🇺🇦",
+    "currency": "UAH",
+    "latitude": 49,
+    "longitude": 32
+  },
+  "bank": {
+    "name": "JSC \"UNIVERSAL BANK\""
+  }
+}

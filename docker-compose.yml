@@ -1,0 +1,22 @@
+version: '3.7'
+
+networks:
+  app:
+    ipam:
+      driver: default
+      config:
+        - subnet: 124.19.3.0/24
+
+services:
+  app:
+    build:
+      context: .
+    #   restart: always
+    volumes:
+      - ./:/var/www/html
+    environment:
+      XDEBUG_CONFIG: "remote_host=host.docker.internal remote_enable=1"
+      PHP_IDE_CONFIG: "serverName=wnp.hs"
+    networks:
+      app:
+        ipv4_address: 124.19.3.10

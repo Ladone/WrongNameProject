@@ -1,0 +1,4 @@
+.idea
+./src/dist/source_modified.php
+src/Config/config.php
+vendor
